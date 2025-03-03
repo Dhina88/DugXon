@@ -1,0 +1,392 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Center elements horizontally and vertically */
+.center-middle {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text inside the container */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+section {
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+#contact-us form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+#contact-us form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+#contact-us form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#contact-us form input, 
+#contact-us form textarea, 
+#contact-us form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 1px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-us form button {
+    background-color: #00e549;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-us form button:hover {
+    background-color: #555;
+}
+
+.company-details {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.company-details h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.company-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.company-info {
+    width: 48%;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-image {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 500px;
+}
+
+.about-image img {
+    width: 200%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1.5;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    font-size: 22px;
+    color: #555;
+    line-height: 1.2;
+}
+
+.bottom-left {
+    position: relative;
+    text-align: center;
+    margin-top: -1000px;
+}
+
+.services-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.services-image {
+    flex: 2.8;
+    max-width: 80%;
+}
+
+.services-image img {
+    width: 200%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services-text {
+    flex: 1.5;
+    text-align: center;
+}
+
+.services-text p {
+    margin-bottom: 15px;
+    margin-top: -5px;
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fbfbfb00;
+    z-index: 1000;
+    box-shadow: 0 5px 4px rgba(170, 179, 192, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.topnav h1 {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.topnav h1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.topnav h1 a:hover {
+    color: #e5ff00;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f5f5f500;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+.nav-links a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.023);
+}
+
+.container {
+    margin-top: 0px;
+    font-family: 'Trebuchet MS', serif
+}
+
+.centered-box {
+    font-size: large;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', serif
+}
+
+.onlycenter {
+    font-size: large;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    gap: 25px;
+}
+
+.box {
+    width: 350px;
+    height: 500px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgb(255, 255, 255);
+}
+
+.box img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.box .description {
+    flex: 1;
+    background-color: #000000;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', serif;
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#myVideo {
+    position: fixed; /* Keeps the video in the background */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
+    z-index: -1; /* Places it behind other content */
+}
+
+.content {
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.199);
+    color: #000000;
+    width: 100%;
+    height: 15%;
+    padding: 5px;
+}
+
+#myBtn {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    width: 100px;
+    font-size: 11px;
+    padding: 15px;
+    border: #00e549;
+    background: #000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main-bubble1:hover {
+    background-color: #555;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+    transform: translateY(10%) scale(1.1);
+}
+
+.hover-box:hover {
+    font-family: 'Trebuchet MS', serif;
+    transform: scale(1.05);
+}
+
+.button:hover {
+    font-family: 'Trebuchet MS', serif;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
+                       

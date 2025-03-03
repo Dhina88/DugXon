@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>DugXon Technologies</title>
+                            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Professional font -->
+                            <link rel="stylesheet" href="CSS.css">
+                        </head>
+<body>
+
+                        <div class="topnav">
+                            <h1><a href="Dug.html">DugXon Technologies</a></h1>
+                            <div class="nav-links">
+                                <a href="Dug.html">Home</a>
+                                <a href="#services">Services</a>
+                                <a href="login.html">Log In</a>
+                                <!-- <a href="#our-team">Our Team</a> -->
+                                <a href="#contact-us">Contact Us</a>
+                            </div>
+                        </div>
+
+                        <div class="container" style="position: relative; height: 100vh; display: flex; align-items: center; justify-content: center;">
+                    
+                            <!-- Background with opacity -->
+                            <!-- <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                                        background: url('images/5.png') no-repeat center center/cover; 
+                                        opacity: 0.75; z-index: 0;">
+                            </div> -->
+                        
+                            <!-- Fully opaque text 
+                            <div style="position: relative; text-align: center; z-index: 1;">
+                                <h1 style="font-size: 60px; font-weight: bold; color: black; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
+                                    Welcome to DugXon Technologies
+                                </h1>
+                                <p style="font-size: 24px; font-weight: 500; color: black; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);">
+                                    Your trusted partner in innovation and technology.
+                                </p>
+                            </div> -->
+                        
+                        </div> 
+
+                                            <video autoplay muted loop id="myVideo">
+                                                <source src="images/video2.mp4" type="video/mp4">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                            
+                                            <!-- <div class="content" id="content">
+                                                <h1>Cookies Settings</h1>
+                                                <p>Lorems.</p>
+                                                <button id="myBtn" onclick="myFunction()">Accept</button>
+                                            </div>
+                                        -->
+                            
+                                            <script>
+                                                    var video = document.getElementById("myVideo");
+                                                    var btn = document.getElementById("myBtn");
+                                                    
+                                                    function myFunction() {
+                                                        if (video.paused) {
+                                                        video.play();
+                                                        btn.innerHTML = "Pause";
+                                                        } else {
+                                                        video.pause();
+                                                        btn.innerHTML = "Play";
+                                                        }
+                                                    }
+                            
+                                                    function myFunction() {
+                                                        // Find the content div by its ID and hide it
+                                                        const contentDiv = document.getElementById("content");
+                                                        contentDiv.style.display = "none";
+                                                    }
+                                            </script>
+                        
+
+                        <div class="centered-box" style="background-color:#000000f0; display: flex; justify-content: space-between; align-items: center; padding: 20px; position: relative;">
+                            <h1 style="color: rgb(255, 255, 255); position: absolute; top: 0; right: 0; margin: 50px;">About Us</h1>
+                            <section id="about-us" style="flex: 1;">
+                                <div style="background-color: rgb(0, 0, 0); padding: 20px; max-width: 600px; border-radius: 10px; text-align: left;">
+                                    <p style="color:white">Welcome to DugXon Technologies! We are your trusted partner, dedicated to delivering top-notch services tailored to meet your unique needs. Our mission is simple yet powerful: to provide innovative, reliable, and effective solutions that help our customers achieve their goals.</p>
+                                    <p style="color:white">Our team is composed of skilled professionals who bring expertise, passion, and creativity to everything we do. Whether you’re looking for advanced solutions, personalized support, or cutting-edge strategies, you can trust us to deliver results that exceed expectations.</p>
+                                    <p style="color:white">At the heart of our operations is a steadfast commitment to excellence and customer satisfaction. We build long-lasting relationships based on trust, transparency, and mutual respect.</p>
+                                    <p style="color:white">As we grow and innovate, we stay focused on making a positive impact. Join us on this exciting journey, and let’s turn your vision into reality!</p>
+                                </div>
+                            </section>
+                            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <img src="images/about-us.jpg" alt="About Us Image" style="max-width: 100%; border-radius: 10px;">
+                                <div style="text-align: center; margin-top: 20px;">
+                                    <button class="main-bubble1" style="padding: 10px 20px; font-size: 16px; background-color: #000000; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s, transform 0.3s;">
+                                        Contact us now!!!
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="centered-box" style="background-color:#000000f0; background-size: cover; display: flex; justify-content: space-between; align-items: center; padding: -10px; position: relative;">
+                            <h1 style="color: white; position: absolute; top: 0; left: 0; margin: 50px;">Services</h1>
+                            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <img src="images/services.jpg" alt="Services Image" style="max-width: 100%; border-radius: 10px;">
+                                <div style="text-align: center; margin-top: 20px;">
+                                    <button class="main-bubble1" style="padding: 10px 20px; font-size: 16px; background-color: #000000; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s, transform 0.3s;">
+                                        View our Services now
+                                    </button>
+                                </div>
+                            </div>
+                            <section id="services" style="flex: 1; text-align: right;">
+                                <div style="background-color: rgba(0, 0, 0, 0); padding: 20px; max-width: 600px; border-radius: 10px; text-align: left;">
+                                    <p style="color:white">Welcome to our services, where innovation meets excellence. We offer a comprehensive range of tailored solutions designed to meet the unique needs of each of our clients.</p>
+                                    <p style="color:white">Our team of skilled professionals brings expertise, passion, and dedication to every project, ensuring the highest standards of quality and effectiveness.</p>
+                                    <p style="color:white">We take a personalized approach, listening carefully to your requirements and designing solutions that are both practical and impactful.</p>
+                                    <p style="color:white">Join us as we continue to innovate, grow, and make a difference in the industry. Let us help you succeed.</p>
+                                    <p style="color:white">Our team of skilled professionals brings expertise, passion, and dedication to every project, ensuring the highest standards of quality and effectiveness.</p>
+                                    <p style="color:white">We take a personalized approach, listening carefully to your requirements and designing solutions that are both practical and impactful.</p>
+                                    <p style="color:white">Join us as we continue to innovate, grow, and make a difference in the industry. Let us help you succeed.</p>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="centered-box" style="background-color: #000000f0; display: flex; flex-direction: column; align-items: center;">
+                            <h2 style="color: #ffffff; font-size: 60px; font-weight: bold; text-align: center; margin-top: 400px;">Where Business meets Technology</h2>
+                            <p style="color: #ffffff; text-align: center; max-width: 800px;">
+                                DugXon Technology is a startup thats been built with a few purpose.
+                            </p>
+                            <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px; max-width: 1000px;">
+                                <div class="hover-box" style="text-align: center; width: 30%; transition: transform 0.3s ease-in-out;">
+                                    <img src="images/web1.png" alt="Image 1" style="width: 100%; border-radius: 10px;">
+                                    <p style="color: #ababab; margin-top: 5px;">Financial Consultant</p>
+                                </div>
+                                <div class="hover-box" style="text-align: center; width: 30%; transition: transform 0.3s ease-in-out;">
+                                    <img src="images/web2.1.png" alt="Image 2" style="width: 100%; border-radius: 10px;">
+                                    <p style="color: #ababab; margin-top: 5px;">Software Solutions</p>
+                                </div>
+                                <div class="hover-box" style="text-align: center; width: 30%; transition: transform 0.3s ease-in-out;">
+                                    <img src="images/web3.png" alt="Image 3" style="width: 100%; border-radius: 10px;">
+                                    <p style="color: #ababab; margin-top: 5px;">Retailing business</p>
+                                </div>
+                            </div>
+                
+                            <p style="color: #ffffff; text-align: center; max-width: 800px; text-align: center;">
+                                Sign up and Log in to our portal today to become an exclusive member of DugXon Tech to enjoy all the benefits.
+                            </p>
+                            <div style="display: flex; justify-content: space-between; width: 50%; margin-top: 20px;">
+                                <a href="https://calendly.com/dugxon/consultsesh">
+                                    <button class="button" style="background-color: #007bff; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; font-family: 'Trebuchet MS', serif">
+                                        Consult with us for FREE now!
+                                    </button>
+                                </a>
+                                <a href="login.html">
+                                    <button class="button" style="background-color: #007bff; color: white; padding: 10px 20px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; font-family: 'Trebuchet MS', serif">
+                                        Log in / Sign up
+                                    </button>
+                                </a>
+                            </div>
+                            <h2 style="color: #ffffff; margin-top: 120px;">What Our Clients Say</h2>
+                            <div style="background-color: #000000f0; padding: 20px; margin-top: 80px; border-radius: 10px; text-align: center;">
+                                <h2 style="color: #000;">What Our Clients Say</h2>
+                                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: -150px;">
+                                    <div style="flex: 1; max-width: 45%; background-color: #f8f8f8; padding: 15px; border-radius: 10px;">
+                                        <p style="color: #333; font-style: italic;">"The service provided was exceptional. The team was professional and delivered exactly what we needed!"</p>
+                                        <p style="color: #555; font-weight: bold;">- Client A</p>
+                                    </div>
+                                    <div style="flex: 1; max-width: 45%; background-color: #f8f8f8; padding: 15px; border-radius: 10px;">
+                                        <p style="color: #333; font-style: italic;">"Highly recommended! Their expertise and commitment to quality are evident in their work."</p>
+                                        <p style="color: #555; font-weight: bold;">- Client B</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <section id="contact-us" style="background-color: #000000f0; background-size: cover; text-align: center;">
+                            <!-- Contact form (left side) -->
+                            <h2 style="color: #ffffff; font-size: 60px; font-weight: bold; text-align: center; margin-top: 400px; font-family: 'Trebuchet MS', serif">Have Some Questions?</h2>
+                            <p style="color: #666; font-size: 20px; text-align: center;font-family: 'Trebuchet MS', serif;">Get in touch with us today to enjoy all the benefits from our company. </p>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 30px;">
+                                <div>
+                                    <img src="images/contact-icon.png" alt="Contact Icon" style="width: 250px;">
+                                </div>
+                                <div>
+                                    <form action="save_to_excel.php" method="POST" style="background: #000000f0; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); width: 900px;">
+                                        <input type="text" placeholder="First Name" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                                        <input type="text" placeholder="Last Name" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                                        <input type="email" placeholder="What's your email?" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                                        <textarea placeholder="Your questions..." style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; height: 80px;"></textarea>
+                                        <button type="submit" style="width: 100%; padding: 10px; background: linear-gradient(90deg, #6a11cb, #2575fc); color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">SEND MESSAGE</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <p style="color: #666; font-size: 14px; text-align: center;">&#127758; Kuala Lumpur,<a href="#" style="color: #007bff; text-decoration: none;"> MALAYSIA</a> : Strada 31 August 1989 78, Chisinau, MD-2012</p>
+                            <p style="color: #666; font-size: 14px; text-align: center;">- @ All Rights Reserved - </p>
+                        </section>
+
+                    
+</body>
+</html>
