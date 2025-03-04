@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background: white;
+            overflow: hidden;
+        }
+
+        /* Left Side - Image */
+        .left-side {
+            flex: 1;
+            background: url('images/login-image.jpg') no-repeat center center/cover;
+        }
+
+        /* Right Side - Form */
+        .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .right-side h2 {
+            margin-bottom: 20px;
+            font-size: 60px;
+            color: #333;
+            font-family: 'Trebuchet MS', serif
+        }
+
+        .input-container {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            width: 100%;
+            margin-bottom: 10px;
+            position: relative; 
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: none;
+            background: transparent;
+            font-family: 'Trebuchet MS', serif
+        }
+
+        .submit-btn {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            color: rgb(255, 255, 255);
+            background: #000000;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Trebuchet MS', serif
+        }
+
+        .submit-btn:hover {
+            background: #7e21ff;
+            border: 2px solid #7e21ff;
+        }
+
+        /* Home Button */
+        .home-btn {
+            margin-top: 120px;
+            padding: 10px 20px;
+            font-size: 14px;
+            background: #000000;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: 'Trebuchet MS', serif
+        }
+
+        .home-btn:hover {
+            background: #7e21ff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            .left-side {
+                height: 50%;
+            }
+
+            .right-side {
+                height: 50%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Left Side (Image) -->
+        <div class="left-side"></div>
+
+        <!-- Right Side (Login Form) -->
+        <div class="right-side">
+            <h2>Guest area</h2>
+            <p style="font-family: 'Trebuchet MS', serif";>Please enter the password to access the page</p><br><br><br>
+            <div class="input-container">
+                <div class="input-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Type password" required>
+                </div>
+            </div>
+            <button class="submit-btn">Enter</button>
+            
+            <!-- Home Button -->
+            <a href="Dug.html" class="home-btn">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
